@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include <..\lib\SimpleModBus\SimpleModbusSlave.h>
+
 
 void setup() {
   // put your setup code here, to run once:
