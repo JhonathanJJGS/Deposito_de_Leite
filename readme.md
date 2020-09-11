@@ -1,1 +1,7 @@
-Tcc deposito de leite automatizado.
+TCC:
+
+Bibliotecas: 
+
+OneWire;
+DS18B20;
+SImpleModBus;
