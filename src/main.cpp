@@ -1,5 +1,7 @@
 #include <Arduino.h>
 #include <..\lib\SimpleModBus\SimpleModbusSlave.h>
+#include <..\lib\DS18B20\DS18B20.h>
+
 
 
 void setup() {
