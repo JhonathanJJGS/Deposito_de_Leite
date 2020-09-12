@@ -4,7 +4,6 @@ Bibliotecas:
 
 - OneWire; - dependencia da ds18b20
 - DS18B20;
-- SImpleModBus;
 - U8g2Lib;
-- U8g2Lib; -TESTEE
+- Step Driver: https://github.com/laurb9/StepperDriver
 
