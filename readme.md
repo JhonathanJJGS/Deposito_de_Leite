@@ -6,3 +6,5 @@ Bibliotecas:
 - DS18B20;
 - SImpleModBus;
 - U8g2Lib;
+- U8g2Lib; -TESTEE
+
