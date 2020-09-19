@@ -11,7 +11,7 @@ extern "C" {
 EtherShield::EtherShield(){
 }
 
-uint16_t EtherShield::ES_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const prog_char *progmem_s){
+uint16_t EtherShield::ES_fill_tcp_data_p(uint8_t *buf,uint16_t pos, const char progmem_s[] PROGMEM){
 	return fill_tcp_data_p(buf, pos, progmem_s);
 }
 

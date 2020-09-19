@@ -31,7 +31,7 @@
 static uint8_t Enc28j60Bank;
 static uint16_t NextPacketPtr;
 
-#define ENC28J60_CONTROL_CS                     10
+#define ENC28J60_CONTROL_CS     10
 #define SPI_MOSI				11
 #define SPI_MISO				12
 #define SPI_SCK					13

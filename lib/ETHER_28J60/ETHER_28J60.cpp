@@ -21,7 +21,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * Includes
  ******************************************************************************/
 
-#include "..\etherShield\etherShield.h"
+#include "etherShield.h"
 #include "ETHER_28J60.h"
 //#include "WProgram.h" // Arduino 0.23
 #include "Arduino.h" // Arduino 1.0 -- 2011 12 15 # Ben Schueler
