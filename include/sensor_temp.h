@@ -8,10 +8,6 @@ DS18B20 sensor(&oneWire);
 
 
 float getTemperaturaC(){
-    sensor.begin();
     sensor.requestTemperatures();
-
     return sensor.getTempC();
-
-
 }

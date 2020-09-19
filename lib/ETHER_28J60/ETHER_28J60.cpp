@@ -68,7 +68,6 @@ void ETHER_28J60::setup(uint8_t macAddress[], uint8_t ipAddress[], uint16_t port
 char* ETHER_28J60::serviceRequest()
 {
 	uint16_t dat_p;
-	int8_t cmd;
 	plen = es.ES_enc28j60PacketReceive(BUFFER_SIZE, buf);
 
 	/*plen will ne unequal to zero if there is a valid packet (without crc error) */
@@ -134,10 +133,11 @@ char* ETHER_28J60::serviceRequest()
 	      }
 		}
 	}
+	return 0;
 }
 
 
-void ETHER_28J60::print(char* text)
+void ETHER_28J60::print(char *text)
 {
 	int j = 0;
   	while (text[j]) 

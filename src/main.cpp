@@ -1,30 +1,19 @@
 #include <Arduino.h>
-//#include <..\lib\SimpleModBus\SimpleModbusSlave.h>
-#include <..\lib\HX711\HX711.h>
-#include <..\include\eth_connection.h>
 #include <..\include\display_oled.h>
 
 
 
-
-
-
-
-
-HX711 W_CELL;
-
-
-
-
-
-
-
-
 void setup(){
-
+   sensor.begin();
+   u8g2.begin();
+   Serial.begin(9600);
+   
+   
 }
 
 void loop(){
-   test_connection();
-   
+   draw_page();
+   Serial.println("Temperatura: ");
+   Serial.print(sensor.getTempC());
+   Serial.println();
 }
