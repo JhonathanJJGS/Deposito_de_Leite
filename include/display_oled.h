@@ -3,7 +3,7 @@
 U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, /* clock=*/ SCL, /* data=*/ SDA, /* reset=*/ U8X8_PIN_NONE);
 #define u8g_logo_width 100
 #define u8g_logo_height 52
-static const unsigned char test_pf[] U8X8_PROGMEM = {
+static const unsigned char uniso_logo[] U8X8_PROGMEM = {
    0x00, 0x00, 0x00, 0x00, 0x00, 0xf8, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xfe, 0xff, 0x07, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x3f, 0xc0, 0x1f, 0x00, 0x00,
@@ -65,7 +65,7 @@ static const unsigned char test_pf[] U8X8_PROGMEM = {
 bool display_boot = 0;
 
 void draw_logo(){
-   u8g2.drawXBMP( 15, 10, u8g_logo_width, u8g_logo_height, test_pf);
+   u8g2.drawXBMP( 15, 10, u8g_logo_width, u8g_logo_height, uniso_logo);
 }
 
 void draw_screen(){
